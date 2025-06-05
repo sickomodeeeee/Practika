@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="diary-container">
+    <h1>Мой Дневник</h1>
+    
+    <div class="search-bar">
+        <input type="text" placeholder="Поиск..">
+        <button class="btn">Найти</button>
+    </div>
+    
+    <a href="{{ url_for('new_entry') }}" class="btn">Новая запись</a>
+    
+    <div class="entries">
+        <h2>Личные записи</h2>
+        
+        <section class="time-period">
+            <h3>Предыдущие 7 дней</h3>
+            <div class="entry">
+                <h4>Список литературы</h4>
+                <p>Пушкин, Достоевский, Тютчев</p>
+</div>
+            <div class="entry">
+                <h4>Данные iCloud</h4>
+                <p>пароль 67548903</p>
+            </div>
+            <div class="entry">
+                <h4>Список в магазин</h4>
+                <p>апельсины, помидоры 1кг, сметана 15%, сыр 400гр</p>
+            </div>
+        </section>
+        
+        <section class="time-period">
+            <h3>Предыдущие 30 дней</h3>
+            <div class="entry">
+                <h4>Даты дней рождений</h4>
+                <p>06.05.2025 день рождения Семьи-11.03.2025</p>
+            </div>
+            <div class="entry">
+                <h4>Петров Виталий Олегович</h4>
+                <p>04.02.2025 89203354664 (8:00-20:00)</p>
+            </div>
+            <div class="entry">
+                <h4>Домашняя работа</h4>
+                <p>написать код на языке C и объяснить его</p>
+            </div>
+            <div class="entry">
+                <h4>Другое</h4>
+                <p>карандаш, пила, мандарин, 89803143928</p>
+            </div>
+            <div class="entry">
+                <h4>Любимые исполнители</h4>
+                <p>Сектор Газа, Лепс, Михаил Круг, Король и Шут</p>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock %}
